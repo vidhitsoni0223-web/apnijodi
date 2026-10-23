@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apni Jodi | Find Your Life Partner</title>
+<style>
+:root{--ink:#20243a;--muted:#697086;--accent:#b53d66;--soft:#fff4f7;--line:#ece6ea;--white:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px max(5%,calc((100% - 1120px)/2));border-bottom:1px solid var(--line);gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:21px;letter-spacing:-.5px}.logo{width:42px;height:42px;border-radius:14px;background:var(--accent);display:grid;place-items:center;color:#fff;font-size:22px}
+nav{display:flex;align-items:center;gap:18px}a{color:inherit;text-decoration:none;font-size:14px}.btn{border:0;border-radius:12px;background:var(--accent);color:#fff;padding:12px 18px;font-weight:700;cursor:pointer}.btn.secondary{background:#fff;color:var(--accent);border:1px solid #e9b8c9}
+select,input{font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fff;width:100%;color:var(--ink)}
+.hero{max-width:1120px;margin:auto;padding:62px 24px 48px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:800;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}
+h1{font-size:clamp(38px,5vw,60px);line-height:1.06;letter-spacing:-2px;margin:15px 0}.hero p{color:var(--muted);font-size:17px;line-height:1.7;max-width:500px}
+.panel{background:var(--soft);padding:28px;border-radius:24px;border:1px solid #f5e4ea}.panel h2{margin:0 0 7px;font-size:24px}.panel>p{font-size:14px;margin:0 0 20px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field label{display:block;font-size:12px;font-weight:700;margin:0 0 6px}.field.full{grid-column:1/-1}.panel .btn{width:100%;margin-top:16px;padding:14px}
+.trust{background:#faf9fb;border-block:1px solid var(--line);padding:25px 20px}.trustinner{max-width:1000px;margin:auto;display:flex;justify-content:space-around;gap:18px;flex-wrap:wrap;text-align:center}.trust strong{display:block;font-size:16px}.trust span{font-size:12px;color:var(--muted)}
+section.features{max-width:1120px;margin:auto;padding:54px 24px}.features h2{text-align:center;font-size:30px;margin:0 0 10px}.intro{text-align:center;color:var(--muted);margin:0 auto 28px;max-width:600px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid var(--line);padding:22px;border-radius:18px}.icon{width:42px;height:42px;border-radius:13px;background:var(--soft);display:grid;place-items:center;font-size:22px}.card h3{margin:15px 0 8px}.card p{font-size:14px;line-height:1.6;color:var(--muted);margin:0}
+footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted);font-size:13px}footer a{color:var(--accent);margin:0 8px}
+.note{font-size:12px;color:var(--muted);line-height:1.5;margin-top:12px}
+@media(max-width:760px){header{padding:14px 18px}nav{gap:10px}nav a{display:none}.hero{grid-template-columns:1fr;padding:40px 18px;gap:28px}.panel{padding:22px}.cards{grid-template-columns:1fr}.trustinner{gap:22px}.brand{font-size:18px}h1{letter-spacing:-1.2px}}
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="#" aria-label="Apni Jodi home"><span class="logo">♡</span><span>Apni Jodi</span></a>
+  <nav>
+    <a href="#how" data-en="How it works" data-hi="कैसे काम करता है">How it works</a>
+    <a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a>
+    <select id="language" aria-label="Choose language" style="width:auto;padding:9px">
+      <option value="en">English</option><option value="hi">हिंदी</option>
+    </select>
+    <button class="btn secondary" onclick="document.getElementById('name').focus()" data-en="Login" data-hi="लॉग इन">Login</button>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <div>
+    <div class="eyebrow" data-en="A beautiful beginning starts here" data-hi="एक खूबसूरत शुरुआत यहाँ से">A beautiful beginning starts here</div>
+    <h1 data-en="Find someone who feels like home." data-hi="अपना जीवनसाथी खोजें, जिसके साथ घर जैसा एहसास हो।">Find someone who feels like home.</h1>
+    <p data-en="Meaningful connections, made simple. Create your profile and take the first step toward your forever." data-hi="सार्थक रिश्ते, अब आसान। अपनी प्रोफाइल बनाएं और जीवनभर के साथ की ओर पहला कदम बढ़ाएं।">Meaningful connections, made simple. Create your profile and take the first step toward your forever.</p>
+    <button class="btn" onclick="document.getElementById('name').focus()" data-en="Create your profile ↓" data-hi="अपनी प्रोफाइल बनाएं ↓">Create your profile ↓</button>
+  </div>
+  <div class="panel">
+    <h2 data-en="Start your journey" data-hi="अपने सफर की शुरुआत करें">Start your journey</h2>
+    <p data-en="Create a profile in a few simple steps." data-hi="कुछ आसान चरणों में अपनी प्रोफाइल बनाएं।">Create a profile in a few simple steps.</p>
+    <form id="profileForm">
+      <div class="formgrid">
+        <div class="field full"><label for="name" data-en="Full name" data-hi="पूरा नाम">Full name</label><input id="name" name="name" required placeholder="Your name" data-en-placeholder="Your name" data-hi-placeholder="आपका नाम"></div>
+        <div class="field"><label for="age" data-en="Age" data-hi="उम्र">Age</label><input id="age" name="age" type="number" min="18" max="100" required placeholder="e.g. 26"></div>
+        <div class="field"><label for="gender" data-en="Looking for" data-hi="किसके लिए खोज रहे हैं">Looking for</label><select id="gender" required><option value="" data-en="Select" data-hi="चुनें">Select</option><option data-en="Bride" data-hi="दुल्हन">Bride</option><option data-en="Groom" data-hi="दूल्हा">Groom</option></select></div>
+        <div class="field full"><label for="city" data-en="City" data-hi="शहर">City</label><input id="city" name="city" required placeholder="Your city" data-en-placeholder="Your city" data-hi-placeholder="आपका शहर"></div>
+      </div>
+      <button class="btn" type="submit" data-en="Get Started" data-hi="शुरू करें">Get Started</button>
+      <div id="message" class="note" role="status" aria-live="polite"></div>
+      <div class="note" data-en="Demo only: this form does not send or save your details yet." data-hi="यह डेमो है: अभी यह फ़ॉर्म आपकी जानकारी भेजता या सेव नहीं करता।">Demo only: this form does not send or save your details yet.</div>
+    </form>
+  </div>
+</section>
+<div class="trust"><div class="trustinner">
+  <div><strong data-en="Your journey" data-hi="आपका सफर">Your journey</strong><span data-en="Starts with a profile" data-hi="एक प्रोफाइल से शुरू">Starts with a profile</span></div>
+  <div><strong data-en="Simple & clear" data-hi="आसान और स्पष्ट">Simple & clear</strong><span data-en="A clean experience" data-hi="साफ-सुथरा अनुभव">A clean experience</span></div>
+  <div><strong data-en="Hindi + English" data-hi="हिंदी + English">Hindi + English</strong><span data-en="Choose your language" data-hi="अपनी भाषा चुनें">Choose your language</span></div>
+</div></div>
+<section class="features" id="how">
+  <h2 data-en="A simpler way to meet your match" data-hi="सही जीवनसाथी खोजने का आसान तरीका">A simpler way to meet your match</h2>
+  <p class="intro" data-en="A welcoming first step for families and individuals looking for a meaningful relationship." data-hi="सार्थक रिश्ते की तलाश कर रहे लोगों और परिवारों के लिए एक आसान शुरुआत।">A welcoming first step for families and individuals looking for a meaningful relationship.</p>
+  <div class="cards">
+    <article class="card"><div class="icon">✍️</div><h3 data-en="Create a profile" data-hi="प्रोफाइल बनाएं">Create a profile</h3><p data-en="Share a few basic details to begin your journey." data-hi="शुरुआत करने के लिए कुछ बुनियादी जानकारी दें।">Share a few basic details to begin your journey.</p></article>
+    <article class="card"><div class="icon">♡</div><h3 data-en="Discover connections" data-hi="रिश्ते खोजें">Discover connections</h3><p data-en="A future version can help you explore suitable profiles." data-hi="आगे चलकर आप उपयुक्त प्रोफाइल खोज सकेंगे।">A future version can help you explore suitable profiles.</p></article>
+    <article class="card" id="contact"><div class="icon">💬</div><h3 data-en="Talk to us" data-hi="हमसे बात करें">Talk to us</h3><p data-en="Add your business WhatsApp number here so visitors can contact you." data-hi="यहाँ अपना बिज़नेस WhatsApp नंबर जोड़ें ताकि लोग संपर्क कर सकें।">Add your business WhatsApp number here so visitors can contact you.</p></article>
+  </div>
+</section>
+</main>
+<footer>© 2026 Apni Jodi · <a href="#contact" data-en="Contact us" data-hi="संपर्क करें">Contact us</a> · <a href="#" onclick="alert('Add your privacy policy before publishing.');return false;" data-en="Privacy Policy" data-hi="प्राइवेसी पॉलिसी">Privacy Policy</a> · <a href="#" onclick="alert('Add your terms before publishing.');return false;" data-en="Terms" data-hi="नियम">Terms</a></footer>
+<script>
+const langSelect=document.getElementById('language');
+function setLanguage(lang){
+ document.documentElement.lang=lang;
+ document.querySelectorAll('[data-en][data-hi]').forEach(el=>{el.textContent=el.dataset[lang]});
+ document.querySelectorAll('[data-en-placeholder][data-hi-placeholder]').forEach(el=>{el.placeholder=el.dataset[lang+'Placeholder']});
+}
+langSelect.addEventListener('change',e=>setLanguage(e.target.value));
+document.getElementById('profileForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const lang=langSelect.value;
+ document.getElementById('message').textContent=lang==='hi'
+ ?'डेमो सफल: फ़ॉर्म सही है, लेकिन जानकारी कहीं सेव नहीं हुई। लाइव वेबसाइट के लिए सुरक्षित डेटाबेस और बैकएंड जोड़ना होगा।'
+ :'Demo successful: the form works, but details were not saved. A secure database and backend are needed for a live website.';
+});
+</script>
+</body>
+</html>
